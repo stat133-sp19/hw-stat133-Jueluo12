@@ -3,25 +3,20 @@ workout01
 Jue Luo
 3/11/2019
 
-    ## Warning: package 'dplyr' was built under R version 3.5.2
+Golden State Warriors did well in season of 2016
+================================================
 
-    ## 
-    ## Attaching package: 'dplyr'
+The season of 2016 has end, many players in the Golden State Warriors has did a very great job during this season. Today, we want to show you how each player in the Golden State Warriors performed during this great season!
 
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
+Overview of the season
+----------------------
 
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-<img src="../images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />
+First, we take a look at the overall shot charts for the Golden State Warriors. As we can see, Kevin Durant, Klay Thompson, and Stephen Curry made the most shot point, the red point indicates that the point they missed, and the green point indicates the point they made. Overall, they made a great amount of shot. <img src="../images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />
 
 2PT Effective Shooting % by Player:
 -----------------------------------
 
-2 PT Field Goal effective shooting percentage by player, arranged in descending order by percentage.
+Second, we look deep into the 2 PT Field Goal effective shooting percentage by player, which is arranged in descending order by percentage in the table below. Andre Iguodala has made the most percentage of 2PT effective shooting which is 63.8%, and Draymond Green has made the least percentage of 2PT effective shooting which is 49.4%. Overall, most of the five player did a great job in which their 2PT effective shoot percentage are above fifty percent.
 
 ``` r
 arrange(
@@ -46,7 +41,7 @@ arrange(
 3PT Effective Shooting % by Player:
 -----------------------------------
 
-3 PT Field Goal effective shooting percentage by player, arranged in descending order by percentage.
+Then we take a glance at the table of 3 PT Field Goal effective shooting percentage by player, which is arranged in descending order by percentage. Overall the shooting percentage is less than the 2PT, but as we all know, it is supposed to be harder for us to get 3 points. From the table, we can see Klay Thompson did the greatest 3PT shoot where he got 42.4% made. On the contrast, Draymond Green only got 31.9% shot.
 
 ``` r
 arrange(
@@ -71,7 +66,7 @@ arrange(
 Effective Shooting % by Player:
 -------------------------------
 
-Overall (i.e. including 2PT and 3PT Field Goals) effective shooting percentage by player, arranged in descending order by percentage.
+Lastly, we take a look at overall (i.e. including 2PT and 3PT Field Goals) effective shooting percentage by player, and it is arranged in descending order by percentage. As we can see, Kevin Durant and Andre Iguodala maintain above 50% of effective shooting rate, wheere Draymond Green got the least effective shooting rate because he got the least effective shooting rate for both 2PT and 3PT.
 
 ``` r
 arrange(
@@ -92,3 +87,21 @@ arrange(
     ## 3 Klay Thompson   1220   575    0.471
     ## 4 Stephen Curry   1250   584    0.467
     ## 5 Draymond Green   578   245    0.424
+
+Next, we will take a look of each player's data, and analysis how each of them has done during the season of 2016. First, we take a close look of our most effective shooting rate person Kevin Durant.
+
+![Kevin Durant](http://videos.usatoday.net/Brightcove2/29906170001/2016/07/29906170001_5020592226001_5020590171001-vs.jpg?pubId=29906170001&quality=10)
+
+Kevin Durant is new signing player for the Gloden State Worriors in 2016, and obvious he did a great job by winning our the most shooting effective rate. He made about 915 shot, and made about 495 shot, which give him an effective shooting rate at 54.1%. He is also the second of the most 2PT effective shooting rate and third of the most 3PT effective shooting rate.
+
+![Stephen Curry](https://usatftw.files.wordpress.com/2016/03/usatsi_9156598.jpg?w=1000&h=600&crop=1) Second, we focus on our the most total shooting attemp and the greatest number of made shooting, our star of the Golden State Worriors, Stephen Curry. Many people in the world believe that Stephen Curry is the one of most successful basketball player today. From the table of effective shooting percentage by player, we can easy see that Stephen Curry did a great job in 3PT shooting where he got the second of the most 3PT effective shooting rate. On the same time, he did not do as well as 3PT in 2PT shooting.
+
+![Draymond Green](https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2016/06/12/golden-state-warriors-draymond-green-suspension.jpg?itok=QYr0Dvk4) Then we look at our least effective shooting rate person Draymond Green. He did make a lot of mistakes during this season of 2016, but he still play his role in the team, never give up and try his best to perform during this season. We will still give our best respect and admire to Draymond, and hope next time he will do better and better.
+
+![Klay Thompson](http://images.performgroup.com/di/library/group_content_la/33/1a/klay-thompson-golden-state-warriors-playoffs-2016_14fwg32moo7lt1on6arf6j7l4w.jpg?t=1850205668&w=960&quality=70) Next is Klay who got the most effective 3PT shooting rate of the season. In this season, he got 580 total attempt of the 3PT shoot and made 246 of them. On the contrast, he did not do well in the 2PT shooting and got the second from the least effective shooting which leading third place of the effective shooting rate overall.
+
+![Andre Iguodala](http://www3.pictures.zimbio.com/gi/Andre+Iguodala+2016+NBA+Finals+Game+One+lAGsdD1VXnil.jpg)
+
+Lastly, we take a look of the data of the Andre Iguodala who got the least total amount of shooting, but it is surprised to see that he still got the second of the most effective shooting rate overall. He is still a good player after all those years of hard working.
+
+##### Overall, our players of Golden State Warriors has did a pretty good job in the season of 2016, and we believe next season, we will see a even stronger Golden State Warriors.
