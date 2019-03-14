@@ -1,0 +1,23 @@
+---
+title: "data dictionary"
+author: "Jue Luo"
+date: "3/13/2019"
+output: github_document
+---
+
+
+Variable Name  |  Description
+------------------------ | ----------------------------------------------------------------------------------
+period  | an NBA game is divided in 4 periods of 12 mins each
+minutes_remaining  | minutes remained to be played in a given period
+seconds_remaining | seconds remained to be played in a given period
+shot_made_flag |  whether a shot was made (shot_yes) or missed (shot_no)
+action_type |  basketball moves used by players, either passed by defenders or pass to a teammate
+shot_type  | distance to the basket (measured in feet).
+x  | court coordinates (measured in inches) where a shot occurred
+y | court coordinates (measured in inches) where a shot occurred
+minute | the minute number where a shot occurred
+name | the name of the player
+season | season of 2016
+team_name | the name of the team
+game_date | the date of the game playing
