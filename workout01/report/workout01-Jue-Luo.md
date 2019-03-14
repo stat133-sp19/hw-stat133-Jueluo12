@@ -104,4 +104,4 @@ Kevin Durant is new signing player for the Gloden State Worriors in 2016, and ob
 
 Lastly, we take a look of the data of the Andre Iguodala who got the least total amount of shooting, but it is surprised to see that he still got the second of the most effective shooting rate overall. He is still a good player after all those years of hard working.
 
-##### Overall, our players of Golden State Warriors has did a pretty good job in the season of 2016, and we believe next season, we will see a even stronger Golden State Warriors.
+#### Overall, our players of Golden State Warriors has did a pretty good job in the season of 2016, and we believe next season, we will see a even stronger Golden State Warriors.
