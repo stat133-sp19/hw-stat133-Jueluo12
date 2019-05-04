@@ -1,12 +1,13 @@
 Package: binomial
 Type: Package
-Title: What the Package Does (Title Case)
+Title: The probability of a binomial randon variable
 Version: 0.1.0
 Author: Jue Luo
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Maintainer: The package maintainer <jueluo@berkeley.edu>
+Description: Binomial distribution
+    The binomial package is to implements functions for calculating probabilities of a Binomial random variable,
+    and related calculations such as the probability distribution, the expect value, variance, etc.
+License: None
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
