@@ -8,14 +8,14 @@
 #' bin_cumulative(trials = 5, prob = 0.5)
 
 bin_cumulative <- function(trials, prob) {
-  df <- bin_distribution(trials, prob)
-  p <- rep(0, trials + 1)
-  for (i in 1:length(p)) {
-    p[i] <- sum(bin_probability(0:(i - 1), trials, prob))
+  bin_cum <- bin_distribution(trials, prob)
+  cum_prob <- rep(0, trials + 1)
+  for (i in 1:length(cum_prob)) {
+    cum_prob[i] <- sum(bin_probability(0:(i - 1), trials, prob))
   }
-  df$cumulative <- p
-  class(df) <- c("bincum", "data.frame")
-  df
+  bin_cum$cumulative <- cum_prob
+  class(bin_cum) <- c("bincum", "data.frame")
+  bin_cum
 }
 
 
