@@ -1,4 +1,4 @@
-Overview
+#Overview
 
 "binomial" is a R package that provides functions to evaluate binomial function.
 
@@ -8,25 +8,25 @@ plot() method for a "toss" object to plot frequencies of heads.
 summary() method for a "toss" object.
 
 
-Motivation
+#Motivation
 
 This package is the homework for stat 133
 
-Installation
+#Installation
 
 Install the development version from GitHub via the package "devtools":
 
-# development version from GitHub:
-#install.packages("devtools") 
+development version from GitHub:
+install.packages("devtools") 
 
-# install "binomial" (without vignettes)
+install "binomial" (without vignettes)
 devtools::install_github("hw-stat133-Jueluo12/workout03/binomial")
 
-# install "binomial" (with vignettes)
+install "binomial" (with vignettes)
 devtools::install_github("hw-stat133-Jueluo12/workout03/binomial", build_vignettes = TRUE)
 
 
-Usage
+#Usage
 
 library(binomial)
 
