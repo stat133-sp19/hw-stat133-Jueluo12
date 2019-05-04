@@ -1,0 +1,73 @@
+---
+title: "Getting Started with binomial"
+author: "Jue Luo"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+1. bin_choose() calculates the number of combinations in which k successes can occur in n trials.
+
+```{r}
+bin_choose(n = 5, k = 2)
+bin_choose(5, 0) 
+bin_choose(5, 1:3)
+```
+
+2. bin_probability() calculates the probability of a binomial variable.
+
+```{r}
+# probability of getting 2 successes in 5 trials (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+# probabilities of getting 2 or less successes in 5 trials # (assuming prob of success = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+ # 55 heads in 100 tosses of a loaded coin with 45% chance of heads
+bin_probability(success = 55, trials = 100, prob = 0.45)
+```
+
+3. bin_distribution() calculates the distribution for a binomial variable.
+    Method plot.bindis() is to graphs a barplot to display the probability histogram of a binomial distribution object "bindis".
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+dis1 <- bin_distribution(trials = 5, prob = 0.5) 
+plot(dis1)
+```
+
+4. bin_cumulative() calculates the cumulative probability of a binomial variable
+    Method plot.bincum() is to graphs the cumulative distribution in ab object "bincum".
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+plot(dis2)
+```
+
+5. bin_variable() creates an object of class "binvar".
+    Method print.binvar() is to nicely print the content of an object "binvar".
+    Method summary.binvar() and print.summary.binvar() is to get a full summary description of an object "binvar".
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+bin1
+binsum1 <- summary(bin1)
+binsum1
+```
+
+
+6. Functions of measures contain main functions for each of the summary measures including bin_mean(), bin_variance(),
+  bin_mode(), bin_skewness(), bin_kurtosis()
+  
+```{r}
+bin_mean(10, 0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+bin_skewness(10, 0.3)
+bin_kurtosis(10, 0.3)
+```
+
+
