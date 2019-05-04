@@ -1,18 +1,22 @@
-#Overview
+# Overview
 
 "binomial" is a R package that provides functions to evaluate binomial function.
 
-coin() creates a coin object (of class "coin")
-toss() tosses a coin object, producing a "toss" object.
-plot() method for a "toss" object to plot frequencies of heads.
-summary() method for a "toss" object.
+1.bin_choose() calculates the number of combinations in which k successes can occur in n trials.
+2.bin_probability() calculates the probability of a binomial variable.
+3.bin_distribution() calculates the distribution for a binomial variable.
+4.bin_cumulative() calculates the cumulative probability of a binomial variable
+5.bin_variable() creates an object of class "binvar".
+6.Functions of measures contain main functions for each of the summary measures including bin_mean(), bin_variance(),
+  bin_mode(), bin_skewness(), bin_kurtosis()
 
 
-#Motivation
+
+# Motivation
 
 This package is the homework for stat 133
 
-#Installation
+# Installation
 
 Install the development version from GitHub via the package "devtools":
 
@@ -26,7 +30,7 @@ install "binomial" (with vignettes)
 devtools::install_github("hw-stat133-Jueluo12/workout03/binomial", build_vignettes = TRUE)
 
 
-#Usage
+# Usage
 
 library(binomial)
 
@@ -36,3 +40,13 @@ a <- bin_distribution(10, 0.3)
 a
 
 plot(a)
+
+b <- bin_cumulative(10, 0.3)
+b
+
+plot(b)
+
+c <- bin_variable(10,0.3)
+c
+
+summary(c)
